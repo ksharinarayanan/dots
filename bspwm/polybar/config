@@ -52,7 +52,7 @@ font-3 = "JetBrains Mono:style=bold:"size=12;3"
 
 modules-left = mod sep bspwm
 modules-center = windowtitle 
-modules-right = volume sep backlight sep network sep battery sep date
+modules-right = mic-volume volume sep backlight sep network sep battery sep date
 
 separator =
 spacing = 0
