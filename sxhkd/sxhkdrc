@@ -19,7 +19,7 @@ super + t
 
 # dmenu
 super + d
-    dmenu_run -i -p 'Launch' -fn 'JetBrains Mono:bold:pixelsize=18' -nb '#282a36' -nf '#fff' -sf '#bd93f9' -sb '#000000'
+    dmenu_run_history -i -p 'Launch' -fn 'JetBrains Mono:bold:pixelsize=18' -nb '#282a36' -nf '#fff' -sf '#bd93f9' -sb '#000000'
 
 # Rofi App Launcher
 alt + F1
