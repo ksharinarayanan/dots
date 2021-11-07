@@ -1,9 +1,9 @@
 DMENU="dmenu -i -l 5 -fn 'JetBrains Mono:bold:pixelsize=18' -nb '#282a36' -nf '#fff' -sf '#bd93f9' -sb '#000000'"
 
 search_engines=(
-  "Amazon - https://www.amazon.in/s?k="
   "Google - https://www.google.com/search?q="
   "Youtube - https://www.youtube.com/results?search_query="
+  "Amazon - https://www.amazon.in/s?k="
 )
 
 
