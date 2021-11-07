@@ -1,0 +1,31 @@
+DMENU="dmenu -i -l 5 -fn 'JetBrains Mono:bold:pixelsize=18' -nb '#282a36' -nf '#fff' -sf '#bd93f9' -sb '#000000'"
+
+search_engines=(
+  "Amazon - https://www.amazon.in/s?k="
+  "Google - https://www.google.com/search?q="
+  "Youtube - https://www.youtube.com/results?search_query="
+)
+
+
+for engine in "${search_engines[@]}"; do
+  name=$(echo $engine | cut -d '-' -f 1)
+  # engines="${engines}${name}\n"
+  engines="${engines}${engine}\n"
+done
+
+select_engine=$(echo -e $engines | eval "${DMENU} -p 'Select search engine'") || exit
+
+search=$(echo $select_engine | cut -d '-' -f 1)
+url=$(echo $select_engine | cut -d '-' -f 2)
+
+echo $search
+echo $url
+
+query=$(echo '' | eval "${DMENU} -p 'Searching ${search}'") || exit
+
+echo $query
+
+search_url="${url}${query}"
+
+echo $search_url
+brave "${search_url}"

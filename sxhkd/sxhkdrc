@@ -17,9 +17,13 @@ super + t
 
 ##---------- Rofi Launcher & Menus ----------##
 
-# dmenu
+# dmenu run launcher
 super + d
     dmenu_run_history -i -p 'Launch' -fn 'JetBrains Mono:bold:pixelsize=18' -nb '#282a36' -nf '#fff' -sf '#bd93f9' -sb '#000000'
+
+# dmenu search
+super + a
+    dmenu-search
 
 # Rofi App Launcher
 alt + F1
