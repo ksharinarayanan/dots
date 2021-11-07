@@ -33,9 +33,15 @@ workspaces() {
 }
 workspaces
 
-bspc config border_width 1
-bspc config window_gap 10
+bspc config border_width 4
+bspc config window_gap 20
 bspc config split_ratio 0.50
+
+gap=10
+
+bspc config top_padding -10
+bspc config right_padding -$gap
+bspc config left_padding -$gap
 
 bspc config focused_border_color "$BLUE" 
 bspc config normal_border_color "$BACKGROUND"
