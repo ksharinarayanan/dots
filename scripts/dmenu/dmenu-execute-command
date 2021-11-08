@@ -1,0 +1,5 @@
+source ~/.config/scripts/dmenu/dmenu-theme
+
+command=$(eval "echo '' | $DMENU -p 'Enter command to execute'")
+
+eval $command 

@@ -5,6 +5,7 @@
 
 ## Environtment
 export PATH="${PATH}:$HOME/.config/bspwm/bin"
+export PATH="${PATH}:$HOME/.config/scripts/dmenu"
 
 ## Get colors from .Xresources -------------------------------#
 xrdb ~/.Xresources

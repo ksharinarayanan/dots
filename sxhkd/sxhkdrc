@@ -25,6 +25,10 @@ super + d
 super + a
     dmenu-search
 
+# dmenu execute a command
+super + e
+    dmenu-execute-command
+
 # Rofi App Launcher
 alt + F1
 	sh ~/.config/bspwm/rofi/bin/launcher

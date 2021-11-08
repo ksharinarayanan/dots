@@ -1,0 +1,1 @@
+DMENU="dmenu -i -l 5 -fn 'JetBrains Mono:bold:pixelsize=18' -nb '#282a36' -nf '#fff' -sf '#bd93f9' -sb '#000000'"
