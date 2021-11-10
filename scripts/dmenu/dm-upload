@@ -1,0 +1,5 @@
+source ~/.config/scripts/dmenu/dmenu-theme
+
+file=$(find $HOME -type f | eval "$DMENU")
+curl -F "file=@$file" 0x0.st | xclip -selection c
+notify-send "Copied link to clipboard" 
